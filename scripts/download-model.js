@@ -2,12 +2,6 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-"scripts": {
-  "dev": "vite",
-  "download-model": "sh download-model.sh", // 新增：执行模型下载脚本
-  "build": "npm run download-model && vite build", // 构建前先下载模型
-  "preview": "vite preview"
-}
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
